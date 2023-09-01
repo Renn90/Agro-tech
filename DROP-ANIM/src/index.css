@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+}
+* {
+  font-family: "Oxanium", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.hero-background {
+  background-image: linear-gradient(
+      to right,
+      #1b5e20,
+      transparent
+    ),
+    url("https://plus.unsplash.com/premium_photo-1664299647855-09045bcf5bf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=952&q=80.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.service{
+  background-image: linear-gradient(
+    to right,
+    #1b5e20,
+    transparent
+  ),
+  url("https://assets.website-files.com/633148302ffcde12c15b7e7d/633417e6f7701e34e46f04a7_Car%20Service.jpg");
+background-size: cover;
+}
+.about{
+  background-image: linear-gradient(
+    to right,
+    #1b5e20,
+    transparent
+  ),
+  url("https://media.istockphoto.com/id/1412751704/photo/female-farmer-is-holding-a-digital-tablet-in-a-farm-field-smart-farming.jpg?s=612x612&w=0&k=20&c=ip06mZA-0nloTCIeoxhabfsoTedXen14zRh8l9gLVnU=");
+background-size: cover;
+object-position: center;
+}
+
+.blurbg{
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+button:disabled{
+  color: rgba(128, 128, 128, 0.24);
+}
+.search-btn:disabled{
+  color: white;
+  background-color: grey;
+}
+@keyframes slideLeft {
+  0% {
+   transform: translateX(20%);
+   opacity: 0;
+  }
+  100%{
+   transform: translateX(0);
+    opacity: 100;
+  }
+}
+@keyframes slideRight {
+  0% {
+   transform: translateX(-20%);
+   opacity: 0;
+  }
+  100%{
+   transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+.trans-width{
+  transition: width 0.4s ease-out;
+  width: 30px;
+}
+.slide-down{
+  overflow: hidden;
+  transition: max-height .8s ease-out;
+  max-height: 200px;
+}
+.slide-up{
+  overflow: hidden;
+  transition: max-height .3s ease-out;
+  max-height: 0px;
+}
+.slide-left{
+  animation: slideLeft 1s;
+}
+.slide-right{
+  animation: slideRight 1s;
+}
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.beat {
+  animation: beat 2s infinite;
+}
+.rotate {
+  transform: rotateX(180deg);
+  transition: 0.2s;
+  background-color: #2e7d32;
+}
+.bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 18px;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+.bar span{
+  height: 4px;
+  margin: 2px;
+  width: 30px;
+  background-color: #2e7d32;
+  border-radius: 3px;
+  transition: 1s;
+  position: absolute;
+  transform-origin: center center;
+  cursor: pointer;
+}
+.bar span:nth-child(1){
+   transform: translateY(7px);
+}
+.bar span:nth-child(3){
+  transform: translateY(0px);
+}
+.bar span:nth-child(3){
+  transform: translateY(-7px);
+}
+.bar .active:nth-child(1){
+  transform: translateY(0px) rotate(45deg);
+  transition-delay: 0.125s;
+}
+.bar .active:nth-child(3){
+  transform: translateY(0px) rotate(-45deg);
+  transition-delay: 0.25s;
+
+}
+.bar .active:nth-child(2){
+  opacity: 0;
+}
+
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+    display: flex;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-in-out forwards;
+}
+.animate-slide-out {
+  animation: slide-out 0.3s ease-in-out forwards;
+}
