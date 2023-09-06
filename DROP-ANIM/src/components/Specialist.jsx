@@ -2,7 +2,7 @@ import React from 'react';
 import anderson from '../assets/anderson.jpg';
 import gabe from '../assets/gabe.jpg';
 import ade from '../assets/ade.jpg'
-import emily from '../assets/emily.jpg'
+import emily from '../assets/Emily.jpg'
 
 const Specialist = ({home}) => {
    const image = 'rounded-lg h-[300px] w-[300px] object-cover object-top'
