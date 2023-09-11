@@ -1,6 +1,0 @@
-[build]
-base = "DROP-ANIM"
-publish = "dist"
-
-[headers]
-"Content-Type": "application/javascript"

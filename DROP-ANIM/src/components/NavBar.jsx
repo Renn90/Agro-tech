@@ -62,7 +62,7 @@ const NavBar = ({ onopen }) => {
           </Link>
         </div>
         <div
-          className={`flex fixed left-0 z-40 top-0 w-[60%] h-[100%] bg-black flex-col items-start transform translate-x-[-500px] sideBar:translate-x-[0px] sideBar:items-center sideBar:w-2/3 sideBar:justify-between sideBar:flex-row sideBar:relative md:w-[40%] ${slide}`}
+          className={`flex fixed left-0 z-40 top-0 w-[60%] h-[100%] ${!window.screenY > 500 && '' , openSideBar && 'bg-black'}  flex-col items-start transform translate-x-[-500px] sideBar:translate-x-[0px] sideBar:items-center sideBar:w-2/3 sideBar:justify-between sideBar:flex-row sideBar:relative md:w-[40%] ${slide}`}
         >
           <div className="flex text-lg m-8 sideBar:m-0 z-[99]">
             <ul className="flex flex-col text-white sideBar:flex-row">

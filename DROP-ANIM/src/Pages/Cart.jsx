@@ -37,7 +37,7 @@ const Cart = () => {
         <>
           {cartProducts.map((item) => (
             <div
-              className="flex container my-4 mx-auto items-center bg-dark-grey p-8 text-bold text-2xl justify-between items-center"
+              className="flex container my-4 mt-[100px] mx-auto items-center bg-dark-grey p-8 text-bold text-2xl justify-between items-center"
               key={item.id}
             >
               <div className="h-[250px] rounded-md  w-[100%] flex flex-col justify-between items-center text-white md:flex-row md:h-[100%]">

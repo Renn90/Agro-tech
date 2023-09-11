@@ -16,7 +16,6 @@ const ProductDetail = () => {
 
   const addTocartHandler =(detail)=> {
      ctx.dispatchfn({type: 'ADDTOCART', value: detail})
-     console.log(ctx.state.cart)
   }
 
   if (!detail) {

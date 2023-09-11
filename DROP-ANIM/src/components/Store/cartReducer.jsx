@@ -50,7 +50,6 @@ const reducer = (state, action) => {
       const filterCart = state.cart.filter((item) => 
          item.id !== action.value.id
       ) 
-      console.log(filterCart)
       return {...state, cart: filterCart,totalAmount: state.totalAmount - (action.value.price * action.value.amount)}
     }
     if(action.type === 'SEARCH'){
