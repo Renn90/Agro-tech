@@ -10,11 +10,11 @@ const Hero = () => {
         animate={{ translateX: "0px", opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="container xl:mx-w-xl mx-auto p-4 flex flex-col justify-between py-[10%]">
+        <div className="container xl:mx-w-xl mx-auto flex flex-col justify-between py-[10%] md:p-4 md:py-[10%]">
           <h1 className="font-bold text-3xl w-[80%] my-2 md:text-5xl">
             AGRO-TECH RENTAL SEVICES AND SOLUTIONS
           </h1>
-          <p className="text-xl w-[70%] my-2 sm: w-[50%]">
+          <p className="text-xl w-[70%] my-2 sm:w-[50%]">
             Experience top-quality, reliable, and customer-centric agricultural
             equipment rentals for all your needs
           </p>

@@ -50,7 +50,7 @@ const [display, setDisplay] = useState(null);
                 arrangement.
               </p>
             <hr />
-          </div>
+          </div> 
           <div className={qusCont}>
             <div className={arrowDiv}>
               <h1 className={heading}>
