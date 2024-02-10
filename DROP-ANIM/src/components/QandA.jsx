@@ -36,12 +36,12 @@ const [display, setDisplay] = useState(null);
               <h1 className={heading}>
                 HOW LONG CAN I RENT THE EQUIPMENT FOR?
               </h1>
-              <HiChevronDown size={40}
-                className={`${arrow} ${
+              <div className={`${arrow} ${
                   display === 1 && "rotate"
                 }`}
-                onClick={() => changeDisplay(1)}
-              />
+                onClick={() => changeDisplay(1)}>
+              <HiChevronDown />
+              </div>
             </div>
               <p className={`${parag} ${display === 1 ? 'slide-down' : 'slide-up'}`}>
                 We offer flexible rental periods to accommodate your specific
@@ -56,12 +56,12 @@ const [display, setDisplay] = useState(null);
               <h1 className={heading}>
                 HOW DO I SCHEDULE AN EQUIPMENT RENTAL?
               </h1>
-              <HiChevronDown size={40}
-                className={`${arrow} ${
+              <div className={`${arrow} ${
                   display === 2 && "rotate"
                 }`}
-                onClick={() => changeDisplay(2)}
-              />
+                onClick={() => changeDisplay(2)}>
+              <HiChevronDown />
+              </div>
             </div>
             <p className={`${parag} ${display === 2 ? 'slide-down' : 'slide-up'}`}>
                 Scheduling an equipment rental is easy! You can visit our
@@ -77,12 +77,12 @@ const [display, setDisplay] = useState(null);
               <h1 className={heading}>
                 DO YOU PROVIDE DELIVERY AND PICKUP SERVICES?
               </h1>
-              <HiChevronDown size={40}
-                className={`${arrow} ${
+              <div className={`${arrow} ${
                   display === 3 && "rotate"
                 }`}
-                onClick={() => changeDisplay(3)}
-              />
+                onClick={() => changeDisplay(3)}>
+              <HiChevronDown />
+              </div>
             </div>
             <p className={`${parag} ${display === 3 ? 'slide-down' : 'slide-up'}`}>
                 Yes, we offer convenient delivery and pickup services. our team
@@ -95,12 +95,12 @@ const [display, setDisplay] = useState(null);
           <div className={qusCont}>
             <div className={arrowDiv}>
               <h1 className={heading}>WHAT PAYMENT METHODS DO YOU ACCEPT?</h1>
-              <HiChevronDown size={40}
-                className={`${arrow} ${
+              <div className={`${arrow} ${
                   display === 4 && "rotate"
                 }`}
-                onClick={() => changeDisplay(4)}
-              />
+                onClick={() => changeDisplay(4)}>
+              <HiChevronDown />
+              </div>
             </div>
             <p className={`${parag} ${display === 4 ? 'slide-down' : 'slide-up'}`}>
                 We accept various payment methods, including credit cards, debit

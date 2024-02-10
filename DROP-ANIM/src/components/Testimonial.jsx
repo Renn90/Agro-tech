@@ -46,14 +46,14 @@ const Testimonial = () => {
   };
 
   const prev = () => {
-    setSlideClass(null);
-    setTimeout(() => {
-      setCurrent((prevIndex) =>
-        prevIndex <= 0 ? testimonialsData.length - 1 : prevIndex - 1
-      );
-      setSlideClass("slide-left");
-    }, 50);
-  };
+  setSlideClass(null);
+  setTimeout(() => {
+    setCurrent((prevIndex) =>
+      prevIndex <= 0 ? testimonialsData.length - 1 : prevIndex - 1
+    );
+    setSlideClass("slide-left");
+  }, 50);
+};
 
 
   const current = testimonialsData[currentIndex];
